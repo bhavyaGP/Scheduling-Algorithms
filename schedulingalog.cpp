@@ -98,7 +98,17 @@ void Priority(vector<pair<int, int>> processes)
 
 int main()
 {
-    vector<pair<int, int>> processes = {{1, 10}, {2, 5}, {3, 8}};
+    int n;
+    cout << "Enter the number of processes: ";
+    cin >> n;
+    vector<pair<int, int>> processes(n);
+    cout << "Enter the process ID and burst time for each process:\n";
+    for (int i = 0; i < n; i++)
+    {
+        int pid, bt;
+        cin >> pid >> bt;
+        processes[i] = make_pair(pid, bt);
+    }
     cout << "FCFS:\n\n";
     FCFS(processes);
     cout << "---------------------------------\n";
