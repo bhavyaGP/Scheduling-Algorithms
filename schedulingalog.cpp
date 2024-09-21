@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-//SOME CHANGE
+
 void FCFS(vector<pair<int, int>> processes)
 {
     int n = processes.size();
@@ -121,4 +121,5 @@ int main()
     cout << "Priority:\n\n";
     Priority(processes);
     cout << "---------------------------------\n";
+    cout<<endl;
 }
